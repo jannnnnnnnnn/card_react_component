@@ -1,9 +1,149 @@
 /* add css module styles here (optional) */
 
-.test {
+/* .test {
   margin: 2em;
   padding: 0.5em;
   border: 2px solid #000;
   font-size: 2em;
   text-align: center;
+} */
+
+/* animations */
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  25% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(-1px, 1px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  25% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(-1px, 1px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
+}
+
+/* Entrire Card Section*/
+.card {
+  max-width: 100%;
+  position: relative;
+  width: 300px;
+  border-radius: 0.8em;
+  box-shadow: 0 0 0.5em #000;
+  font-family: 'helvetica', serif;
+  font-size: 10px;
+  text-align: justify;
+  overflow: hidden;
+  margin: 1em;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #0087f7;
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  max-height: 30ch;
+  object-fit: cover;
+}
+
+/* Icon Section */
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  top: -5ch;
+  left: 7%;
+  width: 86%;
+  /* border: 1px solid #000; */
+}
+
+.icon {
+  width: 10ch;
+  border-radius: 10%;
+  box-shadow: 0 0 0.3rem #888888;
+}
+
+/*Button Section */
+button {
+  border: 2px solid #3504bc;
+  color: #3504bc;
+  border-radius: 0.5rem;
+  padding: 0.13rem 1.3rem;
+  outline: none;
+}
+
+.nobutton {
+  height: 3ch;
+}
+
+.unfollow {
+  background-color: #d6dbe3;
+  border: 2px solid #9fa2a8;
+  left: 177px;
+  color: #8f9298;
+}
+
+button:hover {
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/* Content Section */
+.infosection {
+  position: relative;
+  padding: 0 7%;
+  top: -3ch;
+  /* border: 1px solid red; */
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Resize for different Media Screen Sizes*/
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 500px;
+    font-size: 15px;
+  }
 }
